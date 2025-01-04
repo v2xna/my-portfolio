@@ -1,85 +1,93 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+  background-color: rgb(34, 34, 34);
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Header */
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 1.5rem 2rem;
   border-bottom: 1px solid rgb(92, 92, 92);
 }
 
-.logo {
-  font-weight: bold;
-}
-
-.nav-container {
+nav ul {
+  list-style: none;
   display: flex;
+  gap: 2rem;
 }
 
-.nav-item {
-  margin-right: 10px;
-  font-weight: bold;
+nav ul li {
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-/* Hero section */
+nav ul li:hover {
+  color: #ff7b00;
+}
 
-.hero-section {
-  height: 100vh;
+/* About section */
+
+.about-section {
   display: flex;
-  margin-top: 170px;
   justify-content: center;
-  gap: 350px;
+  margin-top: 3.5rem;
+  gap: 3rem;
 }
 
-.hero-left {
-  margin-right: 30px;
+.about-left {
+  width: 600px;
 }
 
-.file-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 3px;
+.about-left h2 {
+  color: #ff7b00;
 }
 
-.hero-buttons-container {
-  width: 240px;
+.about-left p {
+  margin: 1rem 0;
 }
 
-.btn-resume {
-  width: 100%;
-  height: 40px;
-  padding: 5px 15px;
-  background-color: white;
-  border-radius: 5px;
-
+.socials {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
+  gap: 0.8rem;
 }
 
-.socials-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
+.socials div {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 8px;
 
-.social {
   background-color: #020817;
-  padding: 5px 15px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 40px;
-  border-radius: 5px;
+  align-items: center;
 }
 
-.icon {
-  height: 25px;
-  width: 25px;
+.socials a {
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+.socials a:hover {
+  color: #ff7b00; /* LinkedIn Blue or change based on social */
 }
 
-.luffy {
-  height: 450px;
+.about-right img {
+  width: 250px;
   border-radius: 8px;
 }
 
